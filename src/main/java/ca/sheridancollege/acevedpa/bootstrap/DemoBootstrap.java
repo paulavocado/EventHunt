@@ -50,7 +50,7 @@ public class DemoBootstrap implements CommandLineRunner {
 		//create organizer
 		Organizer organizer1 = Organizer.builder()
 				.orgName("Monsters Inc.")
-				.orgAddress("monster@gmail.com")
+				.orgEmail("monster@gmail.com")
 				.build();
 		organizer1 = organizerRepository.save(organizer1);
 		
@@ -70,6 +70,7 @@ public class DemoBootstrap implements CommandLineRunner {
 				.eventAddress(eventAddress1)
 				.date(eventDate)
 				.time(eventTime)
+				.organizer(organizer1)
 				.category(Categories.NETWORKING)
 				.maxAttendees(30)
 				.ticketPrice(new BigDecimal("20.00"))
@@ -83,12 +84,14 @@ public class DemoBootstrap implements CommandLineRunner {
 		User user1 = User.builder()
 				.username("user123")
 				.userEmail("user123@gmail.com")
+				.userPassword("1234") //needs to be encrypted**
 				.role(Roles.EVENTHUNT_USER)
 				.registrationDate(userRegistrationDate)
 				.build();
 		user1 = userRepository.save(user1);
 		
 		//create ticket
+		
 		
 		//create feedback
 
