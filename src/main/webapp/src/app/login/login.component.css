@@ -1,0 +1,40 @@
+.login-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 64px);
+    width: 100%;
+    background-color: #f4f4f4;
+    overflow: hidden;
+    position: absolute;
+}
+
+.login-card{
+    padding: 30px;
+    width: 350px;
+    text-align: center;
+    background: white;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.full-width{
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.register-link{
+    cursor: pointer;
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.register-link a{
+    text-decoration: none;
+    color: #007bff;
+}
+
+.register-link a:hover{
+    text-decoration: underline;
+}
+

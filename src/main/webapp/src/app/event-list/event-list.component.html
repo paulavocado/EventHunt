@@ -1,0 +1,13 @@
+<div class="event-list-container">
+    <h2>Upcoming Events</h2>
+    <mat-card *ngFor="let event of events" class="event-card">
+        <mat-card-title>{{ event.name }}</mat-card-title>
+        <mat-card-content>
+            <p><strong>Date: </strong>{{event.date}}</p>
+            <p><strong>Location: </strong>{{event.location}}</p>
+        </mat-card-content>
+    <mat-card-actions>
+        <button mat-button color="accent" routerLink="/event-details/{{event.id}}">View Details</button>
+    </mat-card-actions>
+</mat-card>
+</div>

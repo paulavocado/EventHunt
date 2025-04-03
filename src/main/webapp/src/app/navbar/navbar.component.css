@@ -1,0 +1,38 @@
+.spacer{
+    flex-grow: 1;
+}
+
+mat-toolbar{
+    background-color: #1e1e1e;
+    padding: 0 16px;
+    color: white;
+}
+
+.logo{
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+
+.nav-links button{
+    font-size: 1rem;
+    font-weight: 500;
+    color: white;
+    background-color: #333;
+    border-radius: 5px;
+    padding: 8px 12px;
+    margin: 0 5px;
+    transition: background-color 0.3s ease;
+}
+
+.nav-links button:hover{
+    background-color: #444;
+}
+
+.nav-links .active{
+    background-color: #007bff;
+    color: white;
+}
+

@@ -1,0 +1,8 @@
+.event-list-container{
+    max-width: 800px;
+    margin: auto;
+}
+
+.event-card{
+    margin-bottom: 15px;
+}
